@@ -12,6 +12,8 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  <div>
+  <h3>Tags :</h3>
   <ul class="tags">
   {% for tag in site.tags %}
     {% assign t = tag | first %}
@@ -19,5 +21,6 @@ layout: default
     <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
   {% endfor %}
   </ul>
+  </div>
   {% include disqus.html %}
 </article>
