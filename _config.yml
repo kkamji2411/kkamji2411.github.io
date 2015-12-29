@@ -18,8 +18,8 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:kkamji2411@gmail.com
-  facebook:http://facebook.com/kkamji2411
+  email:
+  facebook: http://facebook.com/kkamji2411
   flickr:
   github: https://github.com/kkamji2411/kkamji2411.github.io
   instagram:
