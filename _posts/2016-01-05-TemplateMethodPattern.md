@@ -7,7 +7,8 @@ tags: [Template Method Pattern, Design Pattern, Java]
 **Template Method Pattern**은 반복되는 코드를 줄이기 위한 관심사의 분리로
 추상화를 통해 확장가능한 기능으로 변경하는 패턴으로, 공통으로 사용하는 부분은 상위 추상클래스에서 구현하고
 나머지 필요한 부분은 각각 하위 클래스에서 구현하는 방식입니다.
-
+하지만 완벽한 해결방안이 아니며 상위 클래스에서 abstract 메소드가 추가됐을때에는 모든 하위 클래스가 수정되야
+합니다.
 ``` java
 public abstract class UserService {
     public void addUser(){
