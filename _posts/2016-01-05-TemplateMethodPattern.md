@@ -11,27 +11,27 @@ tags: [Template Method Pattern, Design Pattern, Java]
 한다.
 ``` java
 public abstract class UserService {
-    public void addUser(){
-      //
-    }
+    public abstract void addUser(User user);
     public void delUser(){
-      //
+        //
     }
-    public abstract User getUser();
+    public User getUser(){
+        //
+    }
 }
 
 public class ASiteUserService extends UserService {
     @Override
-    public User getUser() {
+    public void addUser(User user) {
         // ASite User Return
-        return null;
+
     }
 }
 public class BSiteUserService extends UserService {
     @Override
-    public User getUser() {
+    public void addUser(User user) {
         // BSite User Return
-        return null;
+
     }
 }
 
