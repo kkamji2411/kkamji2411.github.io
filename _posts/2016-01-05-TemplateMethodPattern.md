@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Method Pattern ( Spring )
+title: Template Method Pattern & Factory Method Pattern ( Spring )
 tags: [Template Method Pattern, Design Pattern, Java]
 ---
 
@@ -13,10 +13,10 @@ tags: [Template Method Pattern, Design Pattern, Java]
 public abstract class UserDao {
     public abstract void add(User user);
     public void delUser(){
-        //
+        // 유저 삭제 구현부분
     }
     public User getUser(){
-        //
+        // 유저 조회 구현부분
     }
 }
 
@@ -36,3 +36,5 @@ public class BSiteUserDao extends UserDao {
 }
 
 ```
+자! 이제 위에서 얘기한 문제점을 해결해 보자 ** Factory Method Pattern **을 이용하여 좀더 개선된 코드를 작성해보자
+
