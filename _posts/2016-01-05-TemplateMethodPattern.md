@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Method Pattern & Factory Method Pattern ( Spring )
+title: Template Method Pattern ( Spring )
 tags: [Template Method Pattern, Design Pattern, Java]
 ---
 
