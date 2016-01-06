@@ -9,6 +9,7 @@ tags: [Template Method Pattern, Design Pattern, Java]
 나머지 필요한 부분은 각각 하위 클래스에서 구현하는 방식이다.
 하지만 완벽한 해결방안이 아니며 상위 클래스에서 abstract 메소드가 추가됐을때에는 모든 하위 클래스가 수정되야
 한다.
+
 ``` java
 public abstract class UserDao {
     public abstract void add(User user);
@@ -34,5 +35,4 @@ public class BSiteUserDao extends UserDao {
 
     }
 }
-
 ```
