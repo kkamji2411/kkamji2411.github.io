@@ -10,8 +10,8 @@ tags: [Template Method Pattern, Design Pattern, Java]
 하지만 완벽한 해결방안이 아니며 상위 클래스에서 abstract 메소드가 추가됐을때에는 모든 하위 클래스가 수정되야
 한다.
 ``` java
-public abstract class UserService {
-    public abstract void addUser(User user);
+public abstract class UserDao {
+    public abstract void add(User user);
     public void delUser(){
         //
     }
@@ -20,16 +20,16 @@ public abstract class UserService {
     }
 }
 
-public class ASiteUserService extends UserService {
+public class ASiteUserDao extends UserDao {
     @Override
-    public void addUser(User user) {
+    public void add(User user) {
         // ASite User Return
 
     }
 }
-public class BSiteUserService extends UserService {
+public class BSiteUserDao extends UserDao {
     @Override
-    public void addUser(User user) {
+    public void add(User user) {
         // BSite User Return
 
     }
