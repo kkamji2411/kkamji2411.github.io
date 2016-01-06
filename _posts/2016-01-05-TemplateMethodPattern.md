@@ -36,5 +36,3 @@ public class BSiteUserDao extends UserDao {
 }
 
 ```
-자! 이제 위에서 얘기한 문제점을 해결해 보자 ** Factory Method Pattern **을 이용하여 좀더 개선된 코드를 작성해보자
-
