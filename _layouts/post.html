@@ -13,4 +13,13 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
   {% include disqus.html %}
+	<div id="comment">
+		<script>
+			var elScript = document.createElement("script");
+			elScript.type = "text/javascript";
+			elScript.src = "//localhost:8080/js/embed.js";
+			var head = document.getElementsByTagName('head')[0];
+			head.appendChild(elScript);
+		</script>
+	</div>
 </article>
